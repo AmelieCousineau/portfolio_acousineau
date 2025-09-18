@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     line-height: 1.1;
     font-weight: bold;
     margin: 0;
@@ -17,14 +17,17 @@ h6 {
 h1 {
     font-size: var(--font-size-h1);
     line-height: 1;
+    font-weight: 900;
 }
 
 h2 {
     font-size: var(--font-size-h2);
+    font-weight: 900;
 }
 
 h3 {
     font-size: var(--font-size-h3);
+    font-weight: 700;
 }
 
 h4 {
