@@ -1,0 +1,30 @@
+.hero{
+    height: 80vh;
+    position: relative;
+
+    .media{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .content{
+        span{
+            font-weight: 900;
+            font-size: typo(53px, 180px);
+            color: var(--color-white-dark);
+        }
+
+        .line{
+            height: 2px;
+            width: 20%;
+            background-color: var(--color-black);
+        }
+
+        p{
+            font-weight: 300;
+            font-size: typo(20px, 40px);
+        }
+    }
+}
+
