@@ -14,7 +14,7 @@
             font-size: typo(53px, 180px);
             color: var(--color-white-dark);
         }
-
+        
         .line{
             height: 2px;
             width: 20%;
@@ -24,7 +24,40 @@
         p{
             font-weight: 300;
             font-size: typo(20px, 40px);
+            
         }
     }
 }
+
+.media{
+    position: relative;
+
+    img{
+        display: block;
+    }
+
+   .line-vertical{
+        width: 6px;
+        height: 250px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+        top: -14px;
+        left: -14px;
+    }
+
+    .line-horizontal{
+        width: 250px;
+        height: 6px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+        bottom: -14px;
+        right: 0;
+    } 
+
+    .line-haut{
+        top: -14px;
+        left: -14px;
+    }
+}
+
 
