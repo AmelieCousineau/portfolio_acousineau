@@ -3,7 +3,7 @@
 <div class="hero">
     <div class="wrapper">
         <div class="content">
-            <span class="salutation">
+            <span class="greeting js-greeting">
                 Salut!
             </span>
             <h1>Amélie Cousineau</h1>
@@ -11,12 +11,108 @@
             <p>Développeuse web</p>
         </div>
         <div class="media">
-            <div class="line-horizontal line-haut"></div>
+            <div class="line-horizontal line-up"></div>
             <div class="line-vertical"></div>
             <img src="assets/images/photoMoi.png" alt="Photo de moi">
-            <div class="line-horizontal line-bas"></div>
+            <div class="line-horizontal line-down"></div>
         </div>
     </div>
 </div>
+
+<section class="projects">
+    <div class="wrapper">
+        <div class="swiper swiper-full" data-component="Carousel" data-space="120px">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card_media">
+                        <h3 class="title-up">Shell</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <img src="assets/images/mockupShellSound.png" alt="">
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">Sound</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Developpement web | Projet personnel</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card_media">
+                        <h3 class="title-up">La peur</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <img src="assets/images/mockupAnxiete.png" alt="">
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">d'échouer</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Design web | Projet étudiant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <h2>et moi alors?</h2>
+    <div class="wrapper">
+        <p>
+            Presque née devant un ordinateur, je m’intéresse à l’informatique depuis mon plus jeune âge. J’ai commencé par un <span>DEP en soutien informatique</span>, suivie d’un an en <span>technique en informatique</span> pour finir par échouer en <span>technique d’intégration multimédian</span>, l’endroit où j’ai trouvé ma place. En dehors des cours, j’aime les <span>jeux vidéos</span>, la <span>lecture</span>, les <span>casse-têtes</span> et certains sports, tel que le <span>paddleboard</span> et le <span>vélo</span>. Je suis <span>sociable</span>, <span>dynamique</span> et j’aime <span>parlé</span> (même parfois trop).
+        </p>
+        <div class="flex-2">
+            <div class="passions">
+                <h3 class="top">ce qui</h3>
+                <svg class="icon icon--xl stars">
+                    <use href="#icon-star"></use>
+                </svg>
+                <h3 class="bottom">m'anime</h3>
+                <ul>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-game"></use>
+                        </svg>
+                        Jeux vidéo
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-glasses"></use>
+                        </svg>
+                        Lecture
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-puzzle"></use>
+                        </svg>
+                        Casse-tête
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-music"></use>
+                        </svg>
+                        Musique
+                    </li>
+                </ul>
+            </div>
+            <div class="qualities">
+                <h3 class="top">ce qui me</h3>
+                <h3 class="bottom">définit</h3>
+                <svg class="icon icon--xl stars">
+                    <use href="#icon-star"></use>
+                </svg>
+                
+                <ul>
+                    <li>Esprit d’équipe</li>
+                    <li>Minutieuse</li>
+                    <li>Organisée</li>
+                    <li>Créative</li>
+                    <li>Sociable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% include '_partials/_footer.html' %}

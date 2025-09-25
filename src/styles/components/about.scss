@@ -1,0 +1,38 @@
+.about{
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    h2{
+        color: var(--color-primary);
+        margin-left: -12px;
+    }
+
+    p{
+        width: 80%;
+    }
+
+    span{
+        font-weight: 600;
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+
+    .stars{
+        color: var(--color-black-light);
+    }
+}
+
+.flex-2{
+    display: flex;
+    gap: 220px;
+
+    .top{
+
+    }
+
+    .bottom{
+        color: var(--color-primary);
+    }
+}
