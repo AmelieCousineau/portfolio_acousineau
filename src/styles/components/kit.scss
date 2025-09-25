@@ -1,0 +1,58 @@
+.kit{
+    position: relative;
+    overflow: hidden;
+
+    h2{
+        text-align: right;
+    }
+
+    .wrapper{
+        margin-top: 128px;
+    }
+
+    .deco{
+        width: 43.75rem;
+        height: 43.75rem;
+        color: var(--color-white-dark);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: calc(43.75rem / 2 *-1);
+    }
+}
+
+.grid-3{
+    margin-left: 13.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+
+    p{
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    .bottom{
+        color: var(--color-primary);
+        margin-bottom: 24px;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 48px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills ul{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .bigStar{
+        width: 15.6rem;
+        height: 15.6rem;
+        color: var(--color-white-dark);
+        margin: 0 auto;
+    }
+}
