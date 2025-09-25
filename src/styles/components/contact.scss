@@ -1,0 +1,28 @@
+.contact{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+
+    .side{
+        font-size: typo(78px, 250px);
+        color: var(--color-black-light);
+        //transform: rotate(-90deg);
+        writing-mode: sideways-lr;
+        position: absolute;
+        top: 64px;
+        left: -50px;
+    }
+
+    .wrapper{
+        h2{
+            font-size: typo(78px, 250px);
+            color: var(--color-primary);
+            line-height: 85%;
+        }
+    }
+}
+
+.flex_sb{
+    display: flex;
+    justify-content: space-between;
+}
