@@ -1,4 +1,6 @@
 .contact{
+    --line-out: 0px;
+
     background-color: var(--color-black);
     color: var(--color-white);
     position: relative;
@@ -26,8 +28,99 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .form{
     display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 60%;
+}
+
+.mask{
+    width: 12rem;
+    overflow: hidden;
+}
+
+.btn_send{
+    position: relative;
+
+    .send{
+        background-color: transparent;
+        border: none;
+        color: var(--color-white);
+        padding: 16px 32px;
+        font-size: typo(20px, 36px);
+        transition: all 0.5s ease-in; 
+    }
+
+    .line-vertical{
+        width: 3px;
+        height: 44px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+        transition: all 0.5s ease-in; 
+    }
+
+    .line-horizontal{
+        width: 44px;
+        height: 3px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+        transition: all 0.5s ease-in; 
+    } 
+
+    .line-up{
+        top: var(--line-out);
+        right: var(--line-out);
+    }
+
+    .line-right{
+        top: var(--line-out);
+        right: var(--line-out);
+    }
+
+    .line-down{
+        bottom: var(--line-out);
+        left: var(--line-out);
+    }
+
+    .line-left{
+        bottom: var(--line-out);
+        left: var(--line-out);
+    }
+
+    &:hover{
+        .send{
+            color: var(--color-accent);
+        }
+
+        .line-vertical{
+            height: 100%;
+            background-color: var(--color-accent);
+        }
+
+        .line-horizontal{
+            width: 100%;
+            background-color: var(--color-accent);
+        }
+    }
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 200px;
+}
+
+.infos{
+    margin-top: 64px;
+}
+
+.socials{
+    display: flex;
+    gap: 32px;
 }

@@ -190,34 +190,46 @@
         <div class="flex_sb">
             <h2>On<br>Se</h2>
             <div class="form">
-                <svg class="icon formIcon">
-                    <use href="#icon-cercleStar"></use>
-                </svg>
+                <div class="mask">
+                    <svg class="icon formIcon">
+                        <use href="#icon-cercleStar"></use>
+                    </svg>
+                </div>
                 <div class="inputs">
                    <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required />
                     <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required />
-                    <textarea class="input__element" name="comment" id="comment" placeholder="Message" required></textarea> 
+                    <input class="input__element" name="comment" id="comment" placeholder="Message" required></input> 
                 </div>
-                
             </div>
         </div>
         <div class="flex_sb">
             <h2>Parle?</h2>
             <div class="right">
-                <button>Envoyer</button>
+                <div class="btn_send">
+                    <div class="line-horizontal line-up"></div>
+                    <div class="line-vertical line-right"></div>
+                    <button class="send">Envoyer</button> 
+                    <div class="line-vertical line-left"></div>
+                    <div class="line-horizontal line-down"></div> 
+                </div>
+                
                 <nav class="socials">
-                    <svg class="icon icon--xl">
-                        <use href="#icon-linkedin"></use>
-                    </svg>
-                    <svg class="icon icon--xl">
-                        <use href="#icon-github"></use>
-                    </svg>
+                    <a href="https://www.linkedin.com/in/amélie-cousineau-7408422b6" target="_blank">
+                        <svg class="icon icon--xl">
+                            <use href="#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/AmelieCousineau" target="_blank">
+                        <svg class="icon icon--xl">
+                            <use href="#icon-github"></use>
+                        </svg>
+                    </a>
                 </nav>
             </div>
         </div>
         <div class="infos flex_sb">
-            <a href="">ameliecousineau5@gmail.com</a>
-            <a href="">(438) 499-1920</a>
+            <a href="mailto:ameliecousineau5@gmail.com">ameliecousineau5@gmail.com</a>
+            <a href="tel:4384991920">(438) 499-1920</a>
             <a href="">Curriculum vitae</a>
         </div>
     </div>
