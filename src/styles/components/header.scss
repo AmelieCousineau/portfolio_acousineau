@@ -18,9 +18,14 @@ header{
     font-weight: 900;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in;
 
     svg{
         font-size: inherit;
+    }
+
+    &:hover{
+        color: var(--color-accent);
     }
 }
 
@@ -63,8 +68,23 @@ header{
         }
     }
 
+    &:hover{
+        span{
+            background: var(--color-accent);
+
+            &:nth-child(1) {
+                transform: translateX(50%);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(25%);
+            }
+        }     
+    }
+
     .nav-is-active & {
         span {
+            background: var(--color-white);
             top: calc(50% - var(--bar-height) / 2);
 
             &:nth-child(1) {
@@ -107,6 +127,6 @@ header{
     }
 }
 
-.nav-is-active{
+.nav-is-active .nav__main{
     display: flex;
 }
