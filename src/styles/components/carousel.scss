@@ -2,14 +2,16 @@
     overflow: visible;
 }
 
-.swiper-slide{
+.card{
     --margin-out: -32px;
     --line-out: -14px;
     height: 80vh;
+    color: var(--color-black);
     
     .card_media{
         position: relative;
         height: 100%;
+        
 
        h3{
         font-weight: 900;
@@ -28,11 +30,17 @@
             bottom: var(--margin-out);
         } 
 
+        .imgWrapper{
+            overflow: hidden;
+            height: 100%;
+        }
+
         img{
             display: block;
             height: 100%;
             width: 100%;
             object-fit: cover;
+            transition: all 0.5s ease-in;
         }
 
         .line-vertical{
@@ -74,6 +82,14 @@
         text-align: right;
         margin-top: 24px;
         margin-right: var(--margin-out);
+    }
+
+    &:hover{
+        color: var(--color-black);
+
+        img{
+            transform: scale(110%);
+        }
     }
 }
 

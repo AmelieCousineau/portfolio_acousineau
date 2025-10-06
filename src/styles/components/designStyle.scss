@@ -1,0 +1,158 @@
+.style{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+
+    .title{
+        color: var(--color-black-light);
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        gap: 126px;
+
+        h3{
+            color: var(--color-primary);
+            font-size: typo(36px,70px);
+            font-weight: 900;
+        }
+    }
+}
+
+.typos{
+    font-size: typo(32px,48px);
+
+    .typo{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .star{
+            overflow: hidden;
+            width: calc(15rem / 2);
+        }
+
+        .star-right{
+            display: flex;
+            justify-content: right;
+        }
+
+        .icon{
+            height: 15rem;
+            width: 15rem;
+            color: var(--color-black-light);
+        }
+    }
+
+    .righteous{
+        font-family: "Righteous", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 8px;
+
+        .letters{
+            text-align: right;
+        }
+
+        .font-weight{
+            justify-content: end;
+        }
+    }
+
+    .raleway{
+        font-family: "Raleway", sans-serif;
+    }
+
+    .font-weight{
+        display: flex;
+        gap: 16px;
+        line-height: 130%;
+
+        div{
+            padding: 12px;
+        }
+
+        .letter-white{
+            color: var(--color-black);
+            background-color: var(--color-white);
+        }
+        .letter-bold{
+            font-weight: 700;
+        }
+    }
+
+    .letters{
+        font-size: typo(16px,24px);
+
+        .letter-uppercase{
+            text-transform: uppercase;
+        }
+    }
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .icon{
+        height: 4.8rem;
+        width: 4.8rem;
+        color: var(--color-black-light);
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bottom{
+        display: flex;
+        gap: 16px;
+    }
+
+    .color{
+        width: 115px;
+        height: 115px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        span{
+            font-size: typo(16px,20px);
+            font-weight: 300;
+            padding: 4px;
+            line-height: 80%;
+        }
+
+        &.black{
+            background-color: #242424;
+        }
+
+        &.white{
+            background-color: #FFFEFC;
+            color: var(--color-black);
+        }
+
+        &.beige{
+            background-color: #F5EFE4;
+            color: var(--color-black);
+        }
+
+        &.blue{
+            background-color: #6160AB;
+        }
+
+        &.orange{
+            background-color: #DA795D;
+        }
+
+        &.pink{
+            background-color: #AF4E6C;
+        }
+    }
+}

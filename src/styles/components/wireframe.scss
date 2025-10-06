@@ -1,0 +1,18 @@
+.wireframe{
+    background-color: var(--color-black);
+    color: var(--color-black-light);
+    position: relative;
+    overflow: hidden;
+
+    .deco{
+        height: 32.5rem;
+        width: 32.5rem;
+        position: absolute;
+        bottom: 64px;
+        right: calc(32.5rem / 2 *-1);
+    }
+
+    .wrapper{
+        position: relative;
+    }
+}

@@ -61,4 +61,86 @@
     }
 }
 
+.hero_projects{
+    margin-bottom: 64px;
+    height: 100%;
+    margin-top: 100px;
+    padding: 0;
 
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .heading{
+        font-size: typo(32px);
+        font-weight: 700;
+    }
+
+    .up{
+        display: flex;
+    }
+
+    .down{
+        display: flex;
+        justify-content: space-between;
+
+        .icon{
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+    .media{
+        width: 50%;
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .line{
+        height: 2px;
+        width: 255px;
+        background-color: var(--color-black);
+    }
+
+    .description{
+        font-size: typo(36px);
+        font-weight: 700;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 45%;
+        margin: 0;
+
+        h1{
+            color: var(--color-black);
+            font-size: typo(96px);
+        }
+    }
+
+    .credits{
+        display: flex;
+        gap: 32px;
+
+        .credit{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            font-size: typo(16px, 24px);
+        }
+
+        a, .me{
+            font-weight: 700;
+        }
+
+        .me{
+            color: var(--color-primary);
+        }
+    }
+}

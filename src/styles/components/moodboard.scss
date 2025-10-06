@@ -1,0 +1,37 @@
+.moodboard{
+    color: var(--color-white-dark);
+    position: relative;
+
+    .wrapper{
+        position: relative;
+        
+        .star1{
+            width: 12.5rem;
+            height: 12.5rem;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .star2{
+            width: 21rem;
+            height: 21rem;
+            position: absolute;
+            z-index: -1;
+            bottom: -25px;
+            right: -50px;
+        }
+    }
+}
+
+.title{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 64px;
+
+    h2{
+        line-height: 70%;
+    }
+}

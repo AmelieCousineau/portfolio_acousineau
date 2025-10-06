@@ -1,5 +1,6 @@
 //FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -39,3 +40,7 @@
 @import 'components/contact.scss';
 @import 'components/form.scss';
 @import 'components/footer.scss';
+@import 'components/moodboard.scss';
+@import 'components/wireframe.scss';
+@import 'components/prototype.scss';
+@import 'components/designStyle.scss';
