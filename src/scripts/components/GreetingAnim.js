@@ -6,7 +6,7 @@ export default class GreetingAnim{
         this.currentText = "";
         this.isDeleting = false;
         this.typeSpeed = 100; //vitesse en ms
-        this.pauseBetweenWords = 5000 //temps entre chaque animation
+        this.pauseBetweenWords = 3000 //temps entre chaque animation
 
         this.type();
         this.init();

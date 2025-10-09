@@ -130,8 +130,13 @@
     .media{
         width: 50%;
 
-        img{
-            object-fit: cover;
+        .zoom{
+            overflow: hidden;
+
+            img{
+                transform: scale(1.4);
+                object-fit: cover;
+            }
         }
     }
 
@@ -177,5 +182,9 @@
         .me{
             color: var(--color-primary);
         }
+    }
+
+    .logiciels .icon{
+        margin-right: 16px;
     }
 }
