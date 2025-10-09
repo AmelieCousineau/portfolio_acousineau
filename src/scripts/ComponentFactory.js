@@ -2,6 +2,7 @@ import Carousel from "./components/Carousel.js";
 import Header from "./components/Header.js";
 import LineAnim from "./components/LineAnim.js";
 import GreetingAnim from "./components/GreetingAnim.js";
+import StarAnim from "./components/StarAnim.js";
 
 export default class ComponentFactory {
   constructor() {
@@ -11,6 +12,7 @@ export default class ComponentFactory {
       Header,
       LineAnim,
       GreetingAnim,
+      StarAnim,
     };
     this.init();
   }
