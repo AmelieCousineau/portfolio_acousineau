@@ -4,12 +4,18 @@ header{
     z-index: 100;
     width: 100%;
     top: 0;
+    mix-blend-mode: difference;
+    color: #fff;
 
     .wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+    }
+
+    &.nav-is-active{
+        mix-blend-mode: normal;
     }
 }
 
@@ -22,10 +28,15 @@ header{
 
     svg{
         font-size: inherit;
+        transition: all 0.5s ease-in;
     }
 
     &:hover{
-        color: var(--color-accent);
+        color: #fff;
+
+        svg{
+            transform: rotate(90deg);
+        } 
     }
 }
 
@@ -45,7 +56,7 @@ header{
     z-index: 10;
 
     span {
-        background: var(--color-black);
+        background: #fff;
         height: var(--bar-height);
         width: 100%;
         position: absolute;
@@ -70,7 +81,6 @@ header{
 
     &:hover{
         span{
-            background: var(--color-accent);
 
             &:nth-child(1) {
                 transform: translateX(50%);

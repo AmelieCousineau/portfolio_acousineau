@@ -14,6 +14,7 @@
             font-weight: 900;
             font-size: typo(53px, 180px);
             color: var(--color-white-dark);
+            min-height: 1em;
         }
         
         .line{
@@ -30,8 +31,27 @@
     }
 }
 
+.greetings{
+    display: flex;
+    align-items: center;
+    min-height: 288px;
+}
+
+.typeLine{
+    height: 200px;
+    width: 6px;
+    background-color: var(--color-white-dark);
+    display: none;
+}
+
+.typeLine-is-active{
+    display: block;
+}
+
 .media{
     position: relative;
+    padding: 16px 0 16px 16px;
+    width: 35%;
 
     img{
         display: block;
@@ -39,25 +59,40 @@
 
    .line-vertical{
         width: 6px;
-        height: 250px;
+        height: 50%;
         background-color: var(--color-white-dark);
         position: absolute;
-        top: -14px;
-        left: -14px;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in;
     }
 
     .line-horizontal{
-        width: 250px;
+        width: 50%;
         height: 6px;
         background-color: var(--color-white-dark);
         position: absolute;
-        bottom: -14px;
+        bottom: 0;
         right: 0;
+        transition: all 0.5s ease-in;
     } 
 
     .line-up{
-        top: -14px;
-        left: -14px;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in;
+    }
+
+    .line-up-reverse{
+        transform: translateX(100%);
+    }
+
+    .line-vertical-reverse{
+        transform: translateY(100%);
+    }
+
+    .line-down-reverse{
+        transform: translateX(-100%);
     }
 }
 

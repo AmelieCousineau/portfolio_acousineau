@@ -1,5 +1,7 @@
 import Carousel from "./components/Carousel.js";
 import Header from "./components/Header.js";
+import LineAnim from "./components/LineAnim.js";
+import GreetingAnim from "./components/GreetingAnim.js";
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +9,8 @@ export default class ComponentFactory {
     this.componentList = {
       Carousel,
       Header,
+      LineAnim,
+      GreetingAnim,
     };
     this.init();
   }
