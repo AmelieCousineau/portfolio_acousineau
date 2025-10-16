@@ -96,3 +96,44 @@
 .projects{
     overflow: hidden;
 }
+
+.swiper-shellSound{
+    .swiper-slide{
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 32px;
+            color: var(--color-white);
+        }
+    }
+}
+
+.custom-nav{
+    display: flex;
+    gap: 16px;
+
+    button{
+        background-color: unset;
+        border: none;
+        transition: all 0.3s ease-in;
+
+        &:hover{
+            color: var(--color-accent);
+        }
+    }
+
+    .swiper-button-disabled{
+        color: var(--color-white-dark);
+
+        &:hover{
+            color: var(--color-white-dark);
+        }
+    }
+}

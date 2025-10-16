@@ -172,7 +172,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            font-size: typo(16px, 24px);
+            font-size: typo(16px, 20px);
         }
 
         a, .me{
@@ -186,5 +186,12 @@
 
     .logiciels .icon{
         margin-right: 16px;
+    }
+}
+
+.hero-shellSound{
+    .down{
+        width: 65%;
+        align-items: center;
     }
 }

@@ -10,8 +10,8 @@ export default class Carousel {
         el: this.element.querySelector('.swiper-pagination'),
       },
       navigation: {
-        nextEl: this.element.querySelector('.swiper-button-next'),
-        prevEl: this.element.querySelector('.swiper-button-prev'),
+        nextEl: this.element.querySelector('.custom-button-next'),
+        prevEl: this.element.querySelector('.custom-button-prev'),
       },
     };
 

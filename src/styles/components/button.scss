@@ -1,0 +1,74 @@
+.btn{
+    position: relative;
+    height: 100%;
+
+    p{
+        padding: 16px 32px;
+        font-weight: 700;
+    }
+
+    .line-vertical{
+        width: 3px;
+        height: 44px;
+        background-color: var(--color-black);
+        position: absolute;
+        transition: all 0.5s ease-in; 
+    }
+
+    .line-horizontal{
+        width: 44px;
+        height: 3px;
+        background-color: var(--color-black);
+        position: absolute;
+        transition: all 0.5s ease-in; 
+    } 
+
+    .line-up{
+        top: 0;
+        right: 0;
+    }
+
+    .line-right{
+        top: 0;
+        right: 0;
+    }
+
+    .line-down{
+        bottom: 0;
+        left: 0;
+    }
+
+    .line-left{
+        bottom: 0;
+        left: 0;
+    }
+
+    &:hover{
+        .send{
+            color: var(--color-accent);
+        }
+
+        .line-vertical{
+            height: 100%;
+            background-color: var(--color-accent);
+        }
+
+        .line-horizontal{
+            width: 100%;
+            background-color: var(--color-accent);
+        }
+    }
+}
+
+.btn_send{
+    height: auto;
+
+    .send{
+        background-color: transparent;
+        border: none;
+        color: var(--color-white);
+        padding: 16px 32px;
+        font-size: typo(20px, 36px);
+        transition: all 0.5s ease-in; 
+    }
+}

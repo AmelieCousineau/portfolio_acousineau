@@ -1,0 +1,19 @@
+.coding{
+    overflow: hidden;
+    position: relative;
+
+    .title{
+        position: static;
+        color: var(--color-white-dark);
+        margin-bottom: 64px;
+    }
+
+    .deco{
+        color: var(--color-white-dark);
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        top: 14%;
+        left: 4%;
+    }
+}

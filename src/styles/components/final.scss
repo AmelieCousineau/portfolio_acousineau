@@ -1,0 +1,39 @@
+.final{
+    background-color: var(--color-black);
+    position: relative;
+    overflow: hidden;
+
+    .title{
+        color: var(--color-black-light);
+    }
+
+    img{
+        width: 100%;
+        transform: scale(120%);
+    }
+
+    .deco{
+        width: 20rem;
+        height: 20rem;
+        color: var(--color-black-light);
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    .deco-big{
+        width: 30rem;
+        height: 30rem;
+        color: var(--color-black-light);
+        position: absolute;
+        top: 35%;
+        right: calc(30rem / 2 * -1);
+    }
+}
+
+.final-webjam{
+    .deco{
+        left: 34%;
+        top: 10%;
+    }
+}
