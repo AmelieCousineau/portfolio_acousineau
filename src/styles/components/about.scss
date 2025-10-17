@@ -4,9 +4,14 @@
     position: relative;
     overflow: hidden;
 
-    h2{
+    .outWrapper{
         color: var(--color-primary);
         margin-left: -12px;
+    }
+
+    .inWrapper{
+        color: var(--color-primary);
+        display: none;
     }
 
     p{
@@ -19,13 +24,69 @@
     }
 
     .deco{
-        width: 43.75rem;
-        height: 43.75rem;
+        --star-size: 43.75rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
         color: var(--color-black-light);
         position: absolute;
         z-index: 0;
         top: 25%;
-        right: calc(43.75rem / 2 *-1);
+        right: calc(var(--star-size) / 2 *-1);
+    }
+
+    .deco-star2{
+        display: none;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .deco{
+            --star-size: 30rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        .deco{
+            --star-size: 20rem;
+        }
+
+        .outWrapper{
+            display: none;
+        }
+
+        .inWrapper{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .deco{
+            --star-size: 30rem;
+            top: 43%;
+        }
+
+        .deco-star2{
+            display: block;
+            right: auto;
+            top: 72%;
+            left: calc(var(--star-size) / 2 *-1);
+        }
+
+        p{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .deco{
+            --star-size: 20rem;
+            top: 50%;
+        }
+
+        .deco-star2{
+            top: 80%;
+            left: calc(var(--star-size) / 2 *-1);
+        }
     }
 }
 
@@ -36,6 +97,11 @@
     .bottom{
         color: var(--color-primary);
         margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+        gap: 96px;
     }
 }
 
@@ -59,6 +125,14 @@
             align-items: center;
         }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .top{
+            justify-content: start;
+            align-items: center;
+            gap: 4px;
+        }
+    }
 } 
 
 .qualities{
@@ -74,5 +148,20 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .bottom{
+            justify-content: start;
+            align-items: center;
+            gap: 4px;
+
+            h3{
+                order: 2;
+            }
+        }
+
+        align-self: end;
+        text-align: end;
     }
 }
