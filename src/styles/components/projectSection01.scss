@@ -1,3 +1,190 @@
+.design{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+    padding: 0;
+
+    .title{
+        color: var(--color-black-light);
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 128px;
+        align-items: end;
+
+        h3{
+            color: var(--color-primary);
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .left-container{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        margin-bottom: 64px;
+    }
+    
+    .colors{
+        .top{
+            justify-content: start;
+            gap: 32px;
+        } 
+
+        .black{
+            background-color: #0D141C;
+        }
+
+        .white{
+            background-color: #F2F5F8;
+        }
+
+        .blue-white{
+            background-color: #D8E0E9;
+            color: var(--color-black);
+        }
+
+        .blue{
+            background-color: #41628B;
+        }
+    }
+}
+
+.design-webjam{
+    .left-container{
+        margin-top: 64px;
+    }
+
+    .typos{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        align-items: center;
+
+        .bebas{
+            font-family: "Bebas Neue", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            align-self: end;
+            font-size: typo(48px,64px);
+            gap: 8px;
+
+            .letters{
+                text-align: right;
+                font-size: typo(24px, 32px);
+            }
+
+            .font-weight{
+                line-height: 90%;
+            }
+        }
+
+        .museo{
+            font-family: "MuseoModerno", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 8px;
+
+            .letters{
+                text-align: right;
+            }
+        }
+    }
+
+    .colors{
+        .black{
+            background-color: #0A0A0A;
+        }
+
+        .white{
+            background-color: #FEFEFE;
+        }
+
+        .blue{
+            background-color: #43D6F0;
+            color: var(--color-black);
+        }
+
+        .purple{
+            background-color: #B050FE;
+        }
+
+        .orange{
+            background-color: #F9A383;
+            color: var(--color-black);
+        }
+
+        .green{
+            background-color: #8EFDCA;
+            color: var(--color-black);
+        }
+    }
+}
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.design-portfolio{
+    .wrapper{
+        gap: 64px;
+        padding: 64px 0;
+    }
+
+    .left-container{
+        margin: 0;
+    }
+
+    .colors{
+        .black{
+            background-color: var(--color-black);
+        }
+
+        .black-light{
+            background-color: var(--color-black-light);
+        }
+
+        .white{
+            background-color: var(--color-white);
+        }
+
+        .white-dark{
+            background-color: var(--color-white-dark);
+            color: var(--color-black);
+        }
+
+        .blue{
+            background-color: var(--color-primary);
+        }
+
+        .pink{
+            background-color: var(--color-accent);
+        }
+    }
+
+    .right-container{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.color{
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+}
+
 .style{
     background-color: var(--color-black);
     color: var(--color-white);

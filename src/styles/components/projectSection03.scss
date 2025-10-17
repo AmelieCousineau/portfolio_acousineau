@@ -37,3 +37,38 @@
         top: 10%;
     }
 }
+
+.wireframe{
+    background-color: var(--color-black);
+    color: var(--color-black-light);
+    position: relative;
+    overflow: hidden;
+
+    .deco{
+        height: 32.5rem;
+        width: 32.5rem;
+        position: absolute;
+        bottom: 64px;
+        right: calc(32.5rem / 2 *-1);
+    }
+
+    .wrapper{
+        position: relative;
+    }
+}
+
+.wireframe-bsc{
+    padding: 0;
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        gap: 16px;
+        
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
