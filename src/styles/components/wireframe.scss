@@ -16,3 +16,19 @@
         position: relative;
     }
 }
+
+.wireframe-bsc{
+    padding: 0;
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        gap: 16px;
+        
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}

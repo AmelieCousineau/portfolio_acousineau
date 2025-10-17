@@ -87,13 +87,6 @@
             }
         }
 
-        .poppins{
-            font-family: "Poppins", sans-serif;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
         .museo{
             font-family: "MuseoModerno", sans-serif;
             display: flex;
@@ -135,4 +128,59 @@
             color: var(--color-black);
         }
     }
+}
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.design-portfolio{
+    .wrapper{
+        gap: 64px;
+        padding: 64px 0;
+    }
+
+    .left-container{
+        margin: 0;
+    }
+
+    .colors{
+        .black{
+            background-color: var(--color-black);
+        }
+
+        .black-light{
+            background-color: var(--color-black-light);
+        }
+
+        .white{
+            background-color: var(--color-white);
+        }
+
+        .white-dark{
+            background-color: var(--color-white-dark);
+            color: var(--color-black);
+        }
+
+        .blue{
+            background-color: var(--color-primary);
+        }
+
+        .pink{
+            background-color: var(--color-accent);
+        }
+    }
+
+    .right-container{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.color{
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
 }

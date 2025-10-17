@@ -63,6 +63,10 @@
 .btn_send{
     height: auto;
 
+    .line-horizontal, .line-vertical{
+        background-color: var(--color-white);
+    }
+
     .send{
         background-color: transparent;
         border: none;
