@@ -2,22 +2,67 @@
     position: relative;
     overflow: hidden;
 
-    h2{
+    .outWrapper{
         text-align: right;
     }
 
     .wrapper{
         margin-top: 128px;
+
+        .inWrapper{
+            display: none;
+        }
     }
 
     .deco{
-        width: 43.75rem;
-        height: 43.75rem;
+        --star-size: 43.75rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
         color: var(--color-white-dark);
         position: absolute;
         z-index: 0;
         top: 25%;
-        left: calc(43.75rem / 2 *-1);
+        left: calc(var(--star-size) / 2 *-1);
+    }
+
+    @media screen and (max-width: 1700px){
+        .deco{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+        .outWrapper{
+            display: none;
+        }
+
+        .wrapper{
+            margin-top: 0;
+
+            .inWrapper{
+                display: block;
+                margin-bottom: 96px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        .deco{
+            --star-size: 30rem;
+
+            display: block;
+            left: auto;
+            right: calc(var(--star-size) / 2 *-1);
+            top: 58%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .deco{
+            --star-size: 19rem;
+            top: 72%;
+        }
     }
 }
 
@@ -50,9 +95,33 @@
     }
 
     .bigStar{
-        width: 15.6rem;
-        height: 15.6rem;
+        --star-size: 15.6rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
         color: var(--color-white-dark);
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1700px){
+        margin: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-lg){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 650px){
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+
+        .bigStar{
+            display: none;
+        }
+
+        ul{
+            gap: 16px;
+        }
     }
 }
