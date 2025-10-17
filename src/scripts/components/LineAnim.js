@@ -14,5 +14,6 @@ export default class LineAnim{
         document.querySelector('.js-line-up').classList.toggle('line-up-reverse');
         document.querySelector('.js-line-left').classList.toggle('line-vertical-reverse');
         document.querySelector('.js-line-down').classList.toggle('line-down-reverse');
+        document.querySelector('.js-line-right').classList.toggle('line-right-reverse');
     }
 }

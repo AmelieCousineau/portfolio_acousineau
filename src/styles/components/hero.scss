@@ -12,7 +12,7 @@
     .content{
         span{
             font-weight: 900;
-            font-size: typo(53px, 180px);
+            font-size: typo(64px, 180px);
             color: var(--color-white-dark);
             min-height: 1em;
         }
@@ -27,6 +27,72 @@
             font-weight: 300;
             font-size: typo(20px, 40px);
             
+        }
+    }
+
+    @media screen and (max-width: 1600px){
+        .content{
+            h1{
+                font-size: typo(150px) !important;
+            } 
+        }
+        
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+
+            h1{
+                font-size: typo(53px, 200px) !important;
+            }
+
+            .line{
+                width: 50%;
+            }
+        }
+        
+        .greetings{
+            min-height: 150px;
+
+            .typeLine{
+                height: 125px;
+            }
+
+            span{
+                line-height: 90%;
+            }
+        }
+
+        .media{
+            position: relative;
+            width: 75%;
+            padding: 16px;
+
+            .line-right{
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .media{
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .greetings{
+            min-height: 100px;
+
+            .typeLine{
+                height: 80px;
+            }
         }
     }
 }
@@ -55,6 +121,7 @@
 
     img{
         display: block;
+        width: 100%;
     }
 
    .line-vertical{
@@ -83,6 +150,14 @@
         transition: all 0.5s ease-in;
     }
 
+    .line-right{
+        top: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+
     .line-up-reverse{
         transform: translateX(100%);
     }
@@ -93,6 +168,10 @@
 
     .line-down-reverse{
         transform: translateX(-100%);
+    }
+
+    .line-right-reverse{
+        transform: translateY(-100%);
     }
 }
 
