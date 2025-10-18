@@ -8,11 +8,21 @@
     .side{
         font-size: typo(78px, 250px);
         color: var(--color-black-light);
-        //transform: rotate(-90deg);
         writing-mode: sideways-lr;
         position: absolute;
         top: 64px;
         left: -50px;
+    }
+
+    .side-hide{
+        display: none;
+        font-size: typo(78px, 250px) !important;
+        color: var(--color-black-light) !important;
+    }
+
+    .hide{
+        display: none;
+        font-size: typo(78px, 250px) !important;
     }
 
     .wrapper{
@@ -21,6 +31,113 @@
             color: var(--color-primary);
             line-height: 85%;
         }
+    }
+
+    @media screen and (max-width: 1800px){
+        .side{
+            font-size: typo(180px);
+            top: 15%;
+        }
+
+        .wrapper{
+            h2{
+                font-size: typo(180px);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1270px){
+        .side{
+            font-size: typo(78px,150px);
+            top: 64px;
+            left: -30px;
+            display: block;
+        }
+
+        h2{
+            font-size: typo(130px);
+            display: none;
+        }
+
+        .hide{
+            display: block;
+        }
+
+        .flex_sb{
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 96px;
+        }
+
+        .form{
+            width: 100%;
+        }
+
+        .right{
+            width: 100%;
+        }
+
+        .infos.flex_sb{
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: 1210px){
+        .side{
+            display: none;
+        }
+
+        .side-hide{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 900px){
+        .infos.flex_sb{
+            justify-content: start;
+            flex-direction: column;
+            align-items: end;
+            gap: 32px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .form{
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .mask{
+            width: 0;
+
+            .formIcon{
+                --star-size: 10rem;
+
+                position: absolute;
+                top: 7%;
+                right: 7%;
+            }
+        } 
+    }
+
+    @media screen and (max-width: 550px){
+        .mask{
+            .formIcon{
+                --star-size: 7rem;
+
+                position: absolute;
+            }
+        } 
+    }
+
+    @media screen and (max-width: 415px){
+        .mask{
+            .formIcon{
+                display: none;
+            }
+        } 
     }
 }
 
@@ -41,6 +158,14 @@
 .mask{
     width: 12rem;
     overflow: hidden;
+
+    .formIcon{
+        --star-size: 20rem;
+
+        height: var(--star-size);
+        width: var(--star-size);
+        color: var(--color-black-light);
+    }
 }
 
 .right{
