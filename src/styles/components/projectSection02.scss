@@ -21,13 +21,16 @@
 .moodboard{
     color: var(--color-white-dark);
     position: relative;
+    overflow: hidden;
 
     .wrapper{
         position: relative;
         
         .star1{
-            width: 12.5rem;
-            height: 12.5rem;
+            --star-size: 12.5rem;
+
+            width: var(--star-size);
+            height: var(--star-size);
             position: absolute;
             z-index: -1;
             top: 0;
@@ -35,13 +38,75 @@
         }
 
         .star2{
-            width: 21rem;
-            height: 21rem;
+            --star-size: 21rem;
+
+            width: var(--star-size);
+            height: var(--star-size);
             position: absolute;
             z-index: -1;
             bottom: -25px;
             right: -50px;
         }
+
+        .mb_mobile{
+            display: none;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1750px){
+        .title{
+            position: static;
+            margin-bottom: 64px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+        .wrapper{
+            .mb{
+                display: none;
+            }
+
+            .mb_mobile{
+                display: block;
+            }
+
+            .star1{
+                --star-size: 10rem;
+            }
+
+            .star2{
+                --star-size: 18rem;
+                right: 0;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 600px){
+        .wrapper{
+            .star1{
+                --star-size: 8rem;
+            }
+
+            .star2{
+                --star-size: 12rem;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .wrapper{
+            .star1{
+                --star-size: 5rem;
+            }
+
+            .star2{
+                --star-size: 10rem;
+            }
+        }
+        
     }
 }
 
