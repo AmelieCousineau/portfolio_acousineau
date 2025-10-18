@@ -1,8 +1,17 @@
 {% include '_partials/_header.html' %}
 
-<section class="hero hero_projects">
+<section class="hero hero_projects hero-webjam">
     <div class="wrapper">
         <div class="up">
+            <div class="media" data-component="LineAnim">
+                <div class="line-horizontal line-up js-line-up"></div>
+                <div class="line-vertical js-line-left"></div>
+                <div class="zoom">
+                    <img src="assets/images/mockupWebjam.png" alt="Photo de moi">
+                </div>
+                <div class="line-vertical line-right js-line-right"></div>
+                <div class="line-horizontal line-down js-line-down"></div>
+            </div>
             <div class="infos">
                 <h1>Vision</h1>
                 <p>Développement web | Projet étudiant</p>
@@ -11,15 +20,6 @@
                 <p>
                     Vision est un site web créée lors d’un <span>WebJam de 36 heures</span>, présentant une <span>paire de lunettes fictives</span> permettant d’accéder à une <span>culture bannie et censurée</span> à travers une expérience <span>sobre et immersive</span>.
                 </p>
-            </div>
-        
-            <div class="media" data-component="LineAnim">
-                <div class="line-horizontal line-up js-line-up"></div>
-                <div class="line-vertical js-line-left"></div>
-                <div class="zoom">
-                    <img src="assets/images/mockupWebjam.png" alt="">
-                </div>
-                <div class="line-horizontal line-down js-line-down"></div>
             </div>
         </div>
         <div class="down">
@@ -149,6 +149,9 @@
                 </div>
 
                 <div class="bottom">
+                    <div class="color black hide">
+                        <span>#0A0A0A</span>
+                    </div>
                     <div class="color white">
                         <span>#FEFEFE</span>
                     </div>
@@ -164,6 +167,38 @@
                     <div class="color green">
                         <span>#8EFDCA</span>
                     </div>
+                </div>
+            </div>
+            <div class="swiper swiper-wf" data-component="Carousel" data-space="64">
+                <h3>Wireframe</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfWebjam_univers.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfWebjam_oeuvre.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfWebjam_souvenir.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfWebjam_vedette.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfWebjam_autre.png" alt="">
+                    </div>
+                </div>
+                <div class="custom-nav custom-nav-gridProjects">
+                    <button class="custom-button-prev">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-leftArrow"></use>
+                        </svg>
+                    </button>
+                    <button class="custom-button-next">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-rightArrow"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>

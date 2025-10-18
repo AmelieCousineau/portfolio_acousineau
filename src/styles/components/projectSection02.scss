@@ -9,12 +9,28 @@
     }
 
     .deco{
+        --star-size: 20rem;
+
         color: var(--color-white-dark);
-        height: 20rem;
-        width: 20rem;
+        height: var(--star-size);
+        width: var(--star-size);
         position: absolute;
         top: 14%;
         left: 4%;
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .deco{
+            --star-size: 10rem;
+            top: 23%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .deco{
+            --star-size: 8rem;
+            top: 27%;
+        }
     }
 }
 

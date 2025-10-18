@@ -347,3 +347,25 @@
         }
     }
 }
+
+.hero-webjam{
+    @media screen and (max-width: $breakpoint-md){
+        .down{
+            justify-content: start;
+            gap: 64px;
+        }
+
+        .credits{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .down{
+            justify-content: start;
+            gap: 64px;
+            flex-direction: column;
+        }
+    }
+}

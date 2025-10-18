@@ -3,7 +3,6 @@
 <section class="hero hero_projects hero-shellSound">
     <div class="wrapper">
         <div class="up">
-            
             <div class="media" data-component="LineAnim">
                 <div class="line-horizontal line-up js-line-up"></div>
                 <div class="line-vertical js-line-left"></div>
@@ -52,7 +51,7 @@
     </div>
     <div class="wrapper">
         <div class="left-container">
-            <img src="assets/images/shellSoundWireframe1.png" alt="">
+            <img src="assets/images/shellSoundWireframe1.png" alt="" class="wf">
             <div class="typos">
                 <h3>Typographie</h3>
                 <div class="typo">
@@ -99,14 +98,43 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper swiper-wf" data-component="Carousel" data-space="64">
+                <h3>Wireframe</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfShellSound_accueil.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfShellSound_spec.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfShellSound_temoignage.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/wfShellSound_fin.png" alt="">
+                    </div>
+                </div>
+                <div class="custom-nav custom-nav-gridProjects">
+                    <button class="custom-button-prev">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-leftArrow"></use>
+                        </svg>
+                    </button>
+                    <button class="custom-button-next">
+                        <svg class="icon icon--lg">
+                            <use href="#icon-rightArrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="right-container">
-            <img src="assets/images/shellSoundWireframe2.png" alt="">
+            <img src="assets/images/shellSoundWireframe2.png" alt="" class="wf">
         </div>
     </div>
 </section>
 
-<!-- <section class="coding">
+<section class="coding">
     <svg class="icon deco" data-component="StarAnim" data-inverse data-speed="10">
         <use href="#icon-star"></use>
     </svg>
@@ -144,9 +172,9 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
-<!-- <section class="final">
+<section class="final">
     <div class="title">
         <h2>03</h2>
         <h3>Final</h3>
@@ -160,6 +188,6 @@
         </svg>
         <img src="assets/images/mockupShellSoundFinal.png" alt="">
     </div>
-</section> -->
+</section>
 
 {% include '_partials/_footer.html' %}

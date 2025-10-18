@@ -13,8 +13,10 @@
     }
 
     .deco{
-        width: 20rem;
-        height: 20rem;
+        --star-size: 20rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
         color: var(--color-black-light);
         position: absolute;
         top: 20%;
@@ -22,12 +24,45 @@
     }
 
     .deco-big{
-        width: 30rem;
-        height: 30rem;
+        --star-size: 30rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
         color: var(--color-black-light);
         position: absolute;
         top: 35%;
-        right: calc(30rem / 2 * -1);
+        right: calc(var(--star-size) / 2 * -1);
+    }
+
+    @media screen and (max-width: 1320px){
+        .title{
+            position: static;
+        }
+    }
+
+    @media screen and (max-width: 900px){
+        .deco{
+            --star-size: 15rem;
+            left: 20%;
+            top: 25%;
+        }
+
+        .deco-big{
+            --star-size: 20rem;
+            top: 50%;
+        }
+    }
+
+    @media screen and (max-width: 640px){
+        .deco{
+            --star-size: 12rem;
+            left: 20%;
+            top: 25%;
+        }
+
+        .deco-big{
+            display: none;
+        }
     }
 }
 
@@ -35,6 +70,24 @@
     .deco{
         left: 34%;
         top: 10%;
+    }
+
+    @media screen and (max-width: 1320px){
+        .deco{
+            top: 20%;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        .deco{
+            left: 25%;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .deco{
+            left: 15%;
+        }
     }
 }
 
