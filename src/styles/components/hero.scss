@@ -188,7 +188,7 @@
     }
 
     .heading{
-        font-size: typo(32px);
+        font-size: typo(24px,32px);
         font-weight: 700;
     }
 
@@ -212,6 +212,7 @@
         .zoom{
             overflow: hidden;
 
+
             img{
                 transform: scale(1.4);
                 object-fit: cover;
@@ -226,7 +227,7 @@
     }
 
     .description{
-        font-size: typo(36px);
+        font-size: typo(24px,36px);
         font-weight: 700;
     }
 
@@ -239,7 +240,7 @@
 
         h1{
             color: var(--color-black);
-            font-size: typo(96px);
+            font-size: typo(53px, 96px);
         }
     }
 
@@ -266,11 +267,78 @@
     .logiciels .icon{
         margin-right: 16px;
     }
+
+    @media screen and (max-width: $breakpoint-lg){
+        .up{
+            flex-direction: column;
+        }
+
+        .media{
+            position: relative;
+            width: 100%;
+            padding: 16px;
+        }
+
+        .infos{
+            width: 100%;
+        }
+
+        .line-right{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .up{
+            flex-direction: column;
+
+            .line-horizontal, .line-vertical{
+                display: none;
+            }
+        }
+
+        h1{
+            margin-top: -8%;
+        }
+
+        .media{
+            position: relative;
+            padding: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .infos{
+            width: 100%;
+            gap: 16px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .down{
+            flex-direction: column;
+            justify-content: start;
+            gap: 64px;
+            align-items: start !important;
+        }
+    }
 }
 
 .hero-shellSound{
     .down{
         width: 65%;
         align-items: center;
+    }
+
+    @media screen and (max-width: $breakpoint-lg){
+        .down{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 430px){
+        h1{
+            margin-top: -13%;
+        }
     }
 }
