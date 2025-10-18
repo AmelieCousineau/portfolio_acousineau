@@ -135,6 +135,7 @@
         background-color: unset;
         border: none;
         transition: all 0.3s ease-in;
+        color: var(--color-black);
 
         &:hover{
             color: var(--color-accent);
