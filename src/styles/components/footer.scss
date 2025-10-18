@@ -19,6 +19,12 @@
         color: var(--color-white);
         font-size: typo(15px, 20px);
     }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .line{
+            width: 75%;
+        }
+    }
 }
 
 .nav__footer{
@@ -33,6 +39,13 @@
             font-size: typo(24px, 32px);
             text-transform: uppercase;
             font-weight: 600;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        ul{
+            flex-direction: column;
+            gap: 32px;
         }
     }
 }
