@@ -45,15 +45,55 @@
     overflow: hidden;
 
     .deco{
-        height: 32.5rem;
-        width: 32.5rem;
+        --star-size: 32.5rem;
+
+        height: var(--star-size);
+        width: var(--star-size);
         position: absolute;
-        bottom: 64px;
-        right: calc(32.5rem / 2 *-1);
+        top: 40%;
+        right: calc(var(--star-size) / 2 *-1);
+    }
+
+    .title{
+        position: static;
     }
 
     .wrapper{
         position: relative;
+
+        .wf{
+            margin-top: 64px;
+            width: 100%;
+            transform: scale(1.1);
+        }
+
+        .wf_mobile{
+            margin-top: 64px;
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        .deco{
+            --star-size: 19rem;
+            top: 60%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .deco{
+            display: none;
+        }
+
+        .wrapper{
+            .wf{
+                display: none;
+            }
+
+            .wf_mobile{
+                display: block;
+            }
+        }
     }
 }
 
