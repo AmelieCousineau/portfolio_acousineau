@@ -3,21 +3,21 @@
 <section class="hero hero_projects">
     <div class="wrapper">
         <div class="up">
-            <div class="infos">
-                <h1>La peur d'échouer</h1>
-                <p>Design web | Projet étudiant</p>
-                <div class="line"></div>
-                <div class="description">Design d’une campagne de sensibilisation fictive</div>
-                <p>La peur d’échouer est une <span>expérience web</span> visant à <span>s’ensibiliser</span> les 15-25 ans sur l’enjeu de <span>l’anxiété de performance.</span></p>
-            </div>
-        
             <div class="media" data-component="LineAnim">
                 <div class="line-horizontal line-up js-line-up"></div>
                 <div class="line-vertical js-line-left"></div>
                 <div class="zoom">
                     <img src="assets/images/mockupAnxiete.png" alt="Photo de moi">
                 </div>
+                <div class="line-vertical line-right js-line-right"></div>
                 <div class="line-horizontal line-down js-line-down"></div>
+            </div>
+            <div class="infos">
+                <h1>La peur d'échouer</h1>
+                <p>Design web | Projet étudiant</p>
+                <div class="line"></div>
+                <div class="description">Design d’une campagne de sensibilisation fictive</div>
+                <p>La peur d’échouer est une <span>expérience web</span> visant à <span>s’ensibiliser</span> les 15-25 ans sur l’enjeu de <span>l’anxiété de performance.</span></p>
             </div>
         </div>
         <div class="down">
@@ -59,8 +59,11 @@
 <section class="style">
     <div class="title">
         <h2>01</h2>
-        <h3>Identité visuel</h3>
+        <h3>Identité visuelle</h3>
     </div>
+    <svg class="icon deco">
+        <use href="#icon-cercleStar"></use>
+    </svg>
     <div class="wrapper">
         <div class="typos">
             <h3>Typographie</h3>
@@ -116,6 +119,9 @@
             </div>
 
             <div class="bottom">
+                <div class="color black hide">
+                    <span>#242424</span>
+                </div>
                 <div class="color white">
                     <span>#FFFEFC</span>
                 </div>
@@ -136,7 +142,7 @@
     </div>
 </section>
 
-<section class="moodboard">
+<!-- <section class="moodboard">
     <div class="title">
         <h2>02</h2>
         <h3>Moodboard</h3>
@@ -150,9 +156,9 @@
             <use href="#icon-star"></use>
         </svg>
     </div>
-</section>
+</section> -->
 
-<section class="wireframe">
+<!-- <section class="wireframe">
     <div class="title">
         <h2>03</h2>
         <h3>évolution</h3>
@@ -163,9 +169,9 @@
     <div class="wrapper">
         <img src="assets/images/wireframeAnxiete.png" alt="">
     </div>
-</section>
+</section> -->
 
-<section class="prototype">
+<!-- <section class="prototype">
     <div class="title">
         <h2>04</h2>
         <h3>Design final</h3>
@@ -179,6 +185,6 @@
             <div class="line-horizontal line-down"></div>
         </div>
     </div>
-</section>
+</section> -->
 
 {% include '_partials/_footer.html' %}

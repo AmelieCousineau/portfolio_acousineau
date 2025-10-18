@@ -189,9 +189,22 @@
     background-color: var(--color-black);
     color: var(--color-white);
     position: relative;
+    overflow: hidden;
 
     .title{
         color: var(--color-black-light);
+    }
+
+    .deco{
+        --star-size: 40rem;
+
+        color: var(--color-black-light);
+        width: var(--star-size);
+        height: var(--star-size);
+        position: absolute;
+        top: 35%;
+        right: calc(var(--star-size) / 2 * -1);
+        display: none;
     }
 
     .wrapper{
@@ -204,6 +217,108 @@
             color: var(--color-primary);
             font-size: typo(36px,70px);
             font-weight: 900;
+        }
+    }
+
+    @media screen and (max-width:1580px){
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 96px;
+            align-items: start;
+        }
+
+        .deco{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width:$breakpoint-md){
+        .title{
+            position: static;
+        }
+
+        .wrapper{
+            margin-top: 64px;
+        }
+
+        .deco{
+            --star-size: 30rem;
+        }
+    }
+
+    @media screen and (max-width:$breakpoint-sm){
+        .typos{
+            .righteous{
+                align-items: start;
+
+                .letter-white{
+                    order: 1;
+                }
+
+                .letter-black{
+                    order: 2;
+                }
+                
+                .letters{
+                    text-align: left;
+                }
+            }
+
+            .star{
+                display: none !important;
+            }
+        }
+
+        .colors{
+            width: 100%;
+            height: 100%;
+
+            .color{
+                aspect-ratio: 1 / 1;
+                width: 100%;
+                height: 100%;
+            }
+
+            .top{
+                justify-content: start;
+                gap: 8px;
+
+                .color{
+                    display: none;
+                }
+            }
+
+            .bottom{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 16px;
+
+                .color.hide{
+                    display: flex;
+                }
+            }
+        }
+
+        .deco{
+            top: 25%;
+        }
+    }
+
+    @media screen and (max-width: 550px){
+        .deco{
+            --star-size: 20rem;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .deco{
+            --star-size: 12rem;
+            top: 28%;
+        }
+
+        .colors .bottom{
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -308,6 +423,10 @@
         display: flex;
         justify-content: end;
         align-items: end;
+
+        &.hide{
+            display: none;
+        }
 
         span{
             font-size: typo(16px,20px);
