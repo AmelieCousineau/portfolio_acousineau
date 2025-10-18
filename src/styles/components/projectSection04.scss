@@ -1,59 +1,48 @@
-.prototype{
-    --line-out: -14px;
+.designFinal{
+    position: relative;
+
+    .deco{
+        --star-size: 25rem;
+
+        width: var(--star-size);
+        height: var(--star-size);
+        position: absolute;
+        color: var(--color-white-dark);
+        top: 15%;
+        left: 15%;
+        z-index: -1;
+    }
 
     .title{
-        color: var(--color-white-dark);
         position: static;
-        margin-bottom: 32px;
+        color: var(--color-white-dark);
     }
 
-    .wrapper{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.embed{
-    position: relative;
-    width: 100%;
-    height: 90vh;
-
-    iframe{
-        width: 100%;
-        height: 100%;
+    @media screen and (max-width: $breakpoint-md){
+        .title{
+            margin-bottom: 64px;
+        }
+        
+        .deco{
+            --star-size: 15rem;
+            left: 10%;
+            top: 27%;
+        }
     }
 
-    .line-vertical{
-        width: 6px;
-        height: 250px;
-        background-color: var(--color-white-dark);
-        position: absolute;
+    @media screen and (max-width: $breakpoint-sm){
+        .deco{
+            --star-size: 10rem;
+            left: 10%;
+            top: 32%;
+        }
     }
 
-    .line-horizontal{
-        width: 250px;
-        height: 6px;
-        background-color: var(--color-white-dark);
-        position: absolute;
-    } 
-
-    .line-up{
-        top: var(--line-out);
-        right: var(--line-out);
-    }
-
-    .line-right{
-        top: var(--line-out);
-        right: var(--line-out);
-    }
-
-    .line-down{
-        bottom: var(--line-out);
-        left: var(--line-out);
-    }
-
-    .line-left{
-        bottom: var(--line-out);
-        left: var(--line-out);
+    @media screen and (max-width: $breakpoint-xs){
+        .deco{
+            --star-size: 8rem;
+            left: 7%;
+            top: 35%;
+        }
     }
 }
