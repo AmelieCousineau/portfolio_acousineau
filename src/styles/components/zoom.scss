@@ -1,0 +1,84 @@
+.modal-zoom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    &.active{
+        display: flex;
+    }
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 80vw;
+        max-height: 80vh;
+        transform-origin: center center;
+        transition: transform 0.2s ease;
+    }
+
+    .controls {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    button {
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: typo(64px);
+        font-weight: 900;
+
+        &:hover{
+            color: var(--color-accent);
+        }
+    }
+
+    .close-btn {
+        align-self: end;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .img-container {
+        position: relative; 
+        width: 80vw;
+        height: 80vh;
+        overflow: hidden;
+    }
+    
+    .zoom-wrapper {
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: center center;
+    }
+
+    #clonedImg {
+        cursor: grab;
+        user-select: none;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}

@@ -3,6 +3,8 @@ import Header from "./components/Header.js";
 import LineAnim from "./components/LineAnim.js";
 import GreetingAnim from "./components/GreetingAnim.js";
 import StarAnim from "./components/StarAnim.js";
+import Scroller from "./components/Scroller.js";
+import Zoom from "./components/Zoom.js";
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +15,8 @@ export default class ComponentFactory {
       LineAnim,
       GreetingAnim,
       StarAnim,
+      Scroller,
+      Zoom,
     };
     this.init();
   }
