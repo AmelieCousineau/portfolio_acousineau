@@ -8,15 +8,11 @@ export default class GreetingAnim{
         this.typeSpeed = 100; //vitesse en ms
         this.pauseBetweenWords = 3000 //temps entre chaque animation
 
-        this.type();
         this.init();
     }
 
     init(){
-        document.addEventListener("DOMContentLoaded", () => {
-            const greeting = document.querySelector('.js-greeting');
-            if(greeting) new GreetingAnim(greeting);
-        });
+        this.type();
     }
 
     type(){
@@ -26,7 +22,7 @@ export default class GreetingAnim{
         if(this.isDeleting){
             //Supprime une lettre
             this.currentText = fullText.substring(0, this.currentText.length - 1);
-            document.querySelector('.js-type-line').classList.add('typeLine-is-active');
+            document.querySelector('.js-type-line').classList.add('typeLine-is-active'); //ajoute la ligne de typage
         }
         else{
             //Ajoute une lettre
@@ -40,14 +36,19 @@ export default class GreetingAnim{
         if(!this.isDeleting && this.currentText === fullText){
             speed = this.pauseBetweenWords;
             this.isDeleting = true;
-            document.querySelector('.js-type-line').classList.remove('typeLine-is-active');
+            document.querySelector('.js-type-line').classList.remove('typeLine-is-active'); //retire la ligne de typage
         }
         else if(this.isDeleting && this.currentText === ""){
             this.isDeleting = false;
-            this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
+
+            this.currentWordIndex++;
+            if(this.currentWordIndex >= this.words.length){
+                this.currentWordIndex = 0;
+            }
+
             speed = 500;
         }
 
-        setTimeout(() => this.type(), speed);
+        setTimeout(this.type.bind(this), speed);
     }
 }

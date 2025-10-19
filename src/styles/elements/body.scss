@@ -4,6 +4,10 @@
    Les éléments de la page vont hérités des propriétés inscrite dans body
    ========================================================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-white);
   font-family: var(--font-primary);
