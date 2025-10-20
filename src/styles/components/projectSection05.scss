@@ -1,6 +1,7 @@
 .prototype{
     --line-out: -14px;
     background-color: var(--color-black);
+    overflow: hidden;
 
     .title{
         color: var(--color-black-light);

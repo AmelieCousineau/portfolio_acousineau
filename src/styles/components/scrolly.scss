@@ -1,0 +1,92 @@
+/* ==========================================================================
+   scrolly / component
+   ========================================================================== */
+
+.has-js {
+    [data-scrolly='fromBottom'] {
+        // déclaration pour cacher l'élément
+
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        // déclaration pour cacher l'élément
+
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        // déclaration pour cacher l'élément
+
+        opacity: 0;
+        transform: translateY(-60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        // déclaration pour cacher l'élément
+
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .cards {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    [data-scrolly='flipFromBottom'] {
+        // déclaration pour cacher l'élément
+        opacity: 0;
+        transform: rotateX(90deg) translate3d(0, 60px, 0);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: rotateX(0) translate3d(0, 0, 0);
+        }
+    }
+
+    [data-scrolly='flipFromTop'] {
+        // déclaration pour cacher l'élément
+        opacity: 0;
+        transform: rotateX(-90deg) translate3d(0, 60px, 0);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: rotateX(0) translate3d(0, 0, 0);
+        }
+    }
+}

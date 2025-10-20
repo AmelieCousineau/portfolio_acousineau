@@ -1,318 +1,320 @@
 {% include '_partials/_header.html' %}
 
-<div id="smooth-wrapper" data-component="Scroller">
-    <div id="smooth-content">
-        <div class="hero" id="accueil">
-            <div class="wrapper">
-                <div class="content">
-                    <div class="greetings">
-                        <span class="greeting js-greeting" data-component="GreetingAnim">
+<div class="hero" id="accueil">
+    <div class="wrapper">
+        <div class="content">
+            <div class="greetings">
+                <span class="greeting js-greeting" data-component="GreetingAnim">
                             Salut!
-                        </span>
-                        <div class="typeLine js-type-line"></div>
+                </span>
+                <div class="typeLine js-type-line"></div>
+            </div>
+            <div class="media" data-component="LineAnim">
+                <div class="line-horizontal line-up js-line-up"></div>
+                <div class="line-vertical js-line-left"></div>
+                <img src="assets/images/photoMoi.png" alt="Photo de moi">
+                <div class="line-vertical line-right js-line-right"></div>
+                <div class="line-horizontal line-down js-line-down"></div>
+            </div>
+            <h1 data-scrolly="fromLeft">Amélie Cousineau</h1>
+            <div class="line"></div>
+            <p>Développeuse web</p>
+        </div>
+    </div>
+</div>
+
+<section class="projects" id="projects">
+    <div class="wrapper">
+        <div class="swiper swiper-full cards" data-component="Carousel" data-space="100px" data-slides="1" data-split>
+            <div class="swiper-wrapper">
+                <a href="shellSound.html" class="swiper-slide card">
+                    <div class="card_media">
+                        <h3 class="title-up">Shell</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <div class="imgWrapper">
+                            <img src="assets/images/mockupShellSound.png" alt="">
+                        </div>
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">Sound</h3>
                     </div>
-                    <div class="media" data-component="LineAnim">
-                        <div class="line-horizontal line-up js-line-up"></div>
-                        <div class="line-vertical js-line-left"></div>
-                        <img src="assets/images/photoMoi.png" alt="Photo de moi">
-                        <div class="line-vertical line-right js-line-right"></div>
-                        <div class="line-horizontal line-down js-line-down"></div>
+                    <div class="card_content">
+                        <p>Developpement web | Projet personnel</p>
                     </div>
-                    <h1>Amélie Cousineau</h1>
-                    <div class="line"></div>
-                    <p>Développeuse web</p>
-                </div>
+                </a>
+
+                <a href="webjam.html" class="swiper-slide card">
+                    <div class="card_media">
+                        <h3 class="title-up">Vision</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <div class="imgWrapper">
+                            <img src="assets/images/mockupWebjam.png" alt="">
+                        </div>
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">Webjam</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Developpement web | Projet étudiant</p>
+                    </div>
+                </a>
+
+                <a href="portfolio.html" class="swiper-slide card">
+                    <div class="card_media">
+                        <h3 class="title-up">Portfolio</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <div class="imgWrapper">
+                            <img src="assets/images/mockupPortfolio.png" alt="">
+                        </div>
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">Amélie</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Developpement web | Projet étudiant</p>
+                    </div>
+                </a>
+
+                <a href="anxiete.html" class="swiper-slide card">
+                    <div class="card_media">
+                        <h3 class="title-up">La peur</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <div class="imgWrapper">
+                            <img src="assets/images/mockupAnxiete.png" alt="">
+                        </div>
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">d'échouer</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Design web | Projet étudiant</p>
+                    </div>
+                </a>
+
+                <a href="baieSteCatherine.html" class="swiper-slide card">
+                    <div class="card_media">
+                        <h3 class="title-up">Baie Sainte</h3>
+                        <div class="line-horizontal line-up"></div>
+                        <div class="line-vertical line-right"></div>
+                        <div class="imgWrapper">
+                            <img src="assets/images/mockupBaieSteCatherine.png" alt="">
+                        </div>
+                        <div class="line-vertical line-left"></div>
+                        <div class="line-horizontal line-down"></div>
+                        <h3 class="title-down">Catherine</h3>
+                    </div>
+                    <div class="card_content">
+                        <p>Design web | Projet étudiant</p>
+                    </div>
+                </a>
+            </div>
+            <div class="custom-nav custom-nav-gridProjects">
+                <button class="custom-button-prev">
+                    <svg class="icon icon--lg">
+                        <use href="#icon-leftArrow"></use>
+                    </svg>
+                </button>
+                <button class="custom-button-next">
+                    <svg class="icon icon--lg">
+                        <use href="#icon-rightArrow"></use>
+                    </svg>
+                </button>
             </div>
         </div>
+    </div>
+</section>
 
-        <section class="projects" id="projects">
-            <div class="wrapper">
-                <div class="swiper swiper-full cards" data-component="Carousel" data-space="100px" data-slides="1" data-split>
-                    <div class="swiper-wrapper">
-                        <a href="shellSound.html" class="swiper-slide card">
-                            <div class="card_media">
-                                <h3 class="title-up">Shell</h3>
-                                <div class="line-horizontal line-up"></div>
-                                <div class="line-vertical line-right"></div>
-                                <div class="imgWrapper">
-                                    <img src="assets/images/mockupShellSound.png" alt="">
-                                </div>
-                                <div class="line-vertical line-left"></div>
-                                <div class="line-horizontal line-down"></div>
-                                <h3 class="title-down">Sound</h3>
-                            </div>
-                            <div class="card_content">
-                                <p>Developpement web | Projet personnel</p>
-                            </div>
-                        </a>
-                        <a href="webjam.html" class="swiper-slide card">
-                            <div class="card_media">
-                                <h3 class="title-up">Vision</h3>
-                                <div class="line-horizontal line-up"></div>
-                                <div class="line-vertical line-right"></div>
-                                <div class="imgWrapper">
-                                    <img src="assets/images/mockupWebjam.png" alt="">
-                                </div>
-                                <div class="line-vertical line-left"></div>
-                                <div class="line-horizontal line-down"></div>
-                                <h3 class="title-down">Webjam</h3>
-                            </div>
-                            <div class="card_content">
-                                <p>Developpement web | Projet étudiant</p>
-                            </div>
-                        </a>
-                        <a href="portfolio.html" class="swiper-slide card">
-                            <div class="card_media">
-                                <h3 class="title-up">Portfolio</h3>
-                                <div class="line-horizontal line-up"></div>
-                                <div class="line-vertical line-right"></div>
-                                <div class="imgWrapper">
-                                    <img src="assets/images/mockupPortfolio.png" alt="">
-                                </div>
-                                <div class="line-vertical line-left"></div>
-                                <div class="line-horizontal line-down"></div>
-                                <h3 class="title-down">Amélie</h3>
-                            </div>
-                            <div class="card_content">
-                                <p>Developpement web | Projet étudiant</p>
-                            </div>
-                        </a>
-                        <a href="anxiete.html" class="swiper-slide card">
-                            <div class="card_media">
-                                <h3 class="title-up">La peur</h3>
-                                <div class="line-horizontal line-up"></div>
-                                <div class="line-vertical line-right"></div>
-                                <div class="imgWrapper">
-                                    <img src="assets/images/mockupAnxiete.png" alt="">
-                                </div>
-                                <div class="line-vertical line-left"></div>
-                                <div class="line-horizontal line-down"></div>
-                                <h3 class="title-down">d'échouer</h3>
-                            </div>
-                            <div class="card_content">
-                                <p>Design web | Projet étudiant</p>
-                            </div>
-                        </a>
-                        <a href="baieSteCatherine.html" class="swiper-slide card">
-                            <div class="card_media">
-                                <h3 class="title-up">Baie Sainte</h3>
-                                <div class="line-horizontal line-up"></div>
-                                <div class="line-vertical line-right"></div>
-                                <div class="imgWrapper">
-                                    <img src="assets/images/mockupBaieSteCatherine.png" alt="">
-                                </div>
-                                <div class="line-vertical line-left"></div>
-                                <div class="line-horizontal line-down"></div>
-                                <h3 class="title-down">Catherine</h3>
-                            </div>
-                            <div class="card_content">
-                                <p>Design web | Projet étudiant</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="custom-nav custom-nav-gridProjects">
-                        <button class="custom-button-prev">
-                            <svg class="icon icon--lg">
-                                <use href="#icon-leftArrow"></use>
-                            </svg>
-                        </button>
-                        <button class="custom-button-next">
-                            <svg class="icon icon--lg">
-                                <use href="#icon-rightArrow"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <svg class="icon deco" data-component="StarAnim" data-speed="9">
-                <use href="#icon-cercleStar"></use>
-            </svg>
-            <svg class="icon deco deco-star2" data-component="StarAnim" data-speed="15" data-inverse>
-                <use href="#icon-cercleStar"></use>
-            </svg>
-            <h2 class="outWrapper">et moi alors?</h2>
+<section class="about" id="about">
+    <svg class="icon deco" data-component="StarAnim" data-speed="9">
+        <use href="#icon-cercleStar"></use>
+    </svg>
+    <svg class="icon deco deco-star2" data-component="StarAnim" data-speed="15" data-inverse>
+        <use href="#icon-cercleStar"></use>
+    </svg>
+    <h2 class="outWrapper" data-scrolly="fromLeft">et moi alors?</h2>
             
-            <div class="wrapper">
-                <h2 class="inWrapper">et moi alors?</h2>
+    <div class="wrapper">
+        <h2 class="inWrapper" data-scrolly="fromLeft">et moi alors?</h2>
 
-                <p>
-                    Presque née devant un ordinateur, je m’intéresse à l’informatique depuis mon plus jeune âge. J’ai commencé par un <span>DEP en soutien informatique</span>, suivie d’un an en <span>technique en informatique</span> pour finir par échouer en <span>technique d’intégration multimédian</span>, l’endroit où j’ai trouvé ma place. En dehors des cours, j’aime les <span>jeux vidéos</span>, la <span>lecture</span>, les <span>casse-têtes</span> et certains sports, tel que le <span>paddleboard</span> et le <span>vélo</span>. Je suis <span>sociable</span>, <span>dynamique</span> et j’aime <span>parlé</span> (même parfois trop).
-                </p>
-                <div class="flex-2">
-                    <div class="passions">
-                        <div class="top">
-                            <h3>ce qui</h3>
-                            <svg class="icon icon--xl stars">
-                                <use href="#icon-star"></use>
-                            </svg>
-                        </div>
-                        <h3 class="bottom">m'anime</h3>
-                        <ul>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-game"></use>
-                                </svg>
-                                Jeux vidéo
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-glasses"></use>
-                                </svg>
-                                Lecture
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-puzzle"></use>
-                                </svg>
-                                Casse-tête
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-music"></use>
-                                </svg>
-                                Musique
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="qualities">
-                        <h3 class="top">ce qui me</h3>
-                        <div class="bottom">
-                            <h3>définit</h3>
-                            <svg class="icon icon--xl stars">
-                                <use href="#icon-star"></use>
-                            </svg>
-                        </div>
-                        <ul>
-                            <li>Esprit d’équipe</li>
-                            <li>Minutieuse</li>
-                            <li>Organisée</li>
-                            <li>Créative</li>
-                            <li>Sociable</li>
-                        </ul>
-                    </div>
+        <p>
+            Presque née devant un ordinateur, je m’intéresse à l’informatique depuis mon plus jeune âge. J’ai commencé par un <span>DEP en soutien informatique</span>, suivie d’un an en <span>technique en informatique</span> pour finir par échouer en <span>technique d’intégration multimédian</span>, l’endroit où j’ai trouvé ma place. En dehors des cours, j’aime les <span>jeux vidéos</span>, la <span>lecture</span>, les <span>casse-têtes</span> et certains sports, tel que le <span>paddleboard</span> et le <span>vélo</span>. Je suis <span>sociable</span>, <span>dynamique</span> et j’aime <span>parlé</span> (même parfois trop).
+        </p>
+        <div class="flex-2">
+            <div class="passions">
+                <div class="top">
+                    <h3>ce qui</h3>
+                    <svg class="icon icon--xl stars">
+                        <use href="#icon-star"></use>
+                    </svg>
                 </div>
+                <h3 class="bottom">m'anime</h3>
+                <ul>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-game"></use>
+                        </svg>
+                        Jeux vidéo
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-glasses"></use>
+                        </svg>
+                        Lecture
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-puzzle"></use>
+                        </svg>
+                        Casse-tête
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-music"></use>
+                        </svg>
+                        Musique
+                    </li>
+                </ul>
             </div>
-        </section>
+            <div class="qualities">
+                <h3 class="top">ce qui me</h3>
+                <div class="bottom">
+                    <h3>définit</h3>
+                    <svg class="icon icon--xl stars">
+                        <use href="#icon-star"></use>
+                    </svg>
+                </div>
+                <ul>
+                    <li>Esprit d’équipe</li>
+                    <li>Minutieuse</li>
+                    <li>Organisée</li>
+                    <li>Créative</li>
+                    <li>Sociable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section class="kit">
-            <h2 class="outWrapper">Mon kit dev</h2>
-            <svg class="icon deco" data-component="StarAnim" data-speed="13">
-                <use href="#icon-star"></use>
+<section class="kit">
+    <h2 class="outWrapper" data-scrolly="fromRight">Mon kit dev</h2>
+    <svg class="icon deco" data-component="StarAnim" data-speed="13">
+        <use href="#icon-star"></use>
+    </svg>
+    <div class="wrapper">
+        <h2 class="inWrapper" data-scrolly="fromLeft">Mon kit dev</h2>
+        <div class="grid-3">
+            <p>
+                Présentement <span>finissante</span> en technique d’intégration multimédia, je suis <span>passionnée de web</span>. Je souhaite me trouver un stage en <span>développement web</span> et j’espère trouver une agence dans laquelle je pourrais <span>continuer mon parcours professionnel</span>. 
+            </p>
+            <div class="skills">
+                <h3>Mon</h3>
+                <h3 class="bottom">Expertise</h3>
+                <ul>
+                    <li>Développement web</li>
+                    <li>Design web</li>
+                </ul>
+            </div>
+            <div class="langages">
+                <h3>Mon</h3>
+                <h3 class="bottom">Language</h3>
+                <ul>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-html"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-css"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-js"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="software">
+                <h3>Mon</h3>
+                <h3 class="bottom">Arsenal</h3>
+                <ul>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-figma"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="icon icon--xl">
+                            <use href="#icon-vscode"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <svg class="icon bigStar" data-component="StarAnim" data-speed="5" data-inverse>
+                <use href="#icon-cercleStar"></use>
             </svg>
-            <div class="wrapper">
-                <h2 class="inWrapper">Mon kit dev</h2>
-                <div class="grid-3">
-                    <p>
-                        Présentement <span>finissante</span> en technique d’intégration multimédia, je suis <span>passionnée de web</span>. Je souhaite me trouver un stage en <span>développement web</span> et j’espère trouver une agence dans laquelle je pourrais <span>continuer mon parcours professionnel</span>. 
-                    </p>
-                    <div class="skills">
-                        <h3>Mon</h3>
-                        <h3 class="bottom">Expertise</h3>
-                        <ul>
-                            <li>Développement web</li>
-                            <li>Design web</li>
-                        </ul>
-                    </div>
-                    <div class="langages">
-                        <h3>Mon</h3>
-                        <h3 class="bottom">Language</h3>
-                        <ul>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-html"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-css"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-js"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="software">
-                        <h3>Mon</h3>
-                        <h3 class="bottom">Arsenal</h3>
-                        <ul>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-figma"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-vscode"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                    </div>
-                    <svg class="icon bigStar" data-component="StarAnim" data-speed="5" data-inverse>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="side" data-scrolly="fromLeft">Hey!</h2>
+    <div class="wrapper">
+        <div class="hides">
+            <h2 class="side-hide" data-scrolly="fromLeft">Hey!</h2>
+            <h2 class="hide" data-scrolly="fromLeft">On se parle?</h2>
+        </div>
+        <div class="flex_sb">
+            <h2 data-scrolly="fromLeft">On<br>Se</h2>
+            <div class="form">
+                <div class="mask">
+                    <svg class="icon formIcon" data-component="StarAnim" data-speed="8">
                         <use href="#icon-cercleStar"></use>
                     </svg>
                 </div>
+                <form class="inputs">
+                    <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required />
+                    <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required />
+                    <input class="input__element" name="comment" id="comment" placeholder="Message" required />
+                </form>
             </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2 class="side">Hey!</h2>
-            <div class="wrapper">
-                <div class="hides">
-                    <h2 class="side-hide">Hey!</h2>
-                    <h2 class="hide">On se parle?</h2>
+        </div>
+        <div class="flex_sb">
+            <h2 data-scrolly="fromLeft">Parle?</h2>
+            <div class="right">
+                <div class="btn btn_send">
+                    <div class="line-horizontal line-up"></div>
+                    <div class="line-vertical line-right"></div>
+                    <button class="send">Envoyer</button> 
+                    <div class="line-vertical line-left"></div>
+                    <div class="line-horizontal line-down"></div> 
                 </div>
-                <div class="flex_sb">
-                    <h2>On<br>Se</h2>
-                    <div class="form">
-                        <div class="mask">
-                            <svg class="icon formIcon" data-component="StarAnim" data-speed="8">
-                                <use href="#icon-cercleStar"></use>
-                            </svg>
-                        </div>
-                        <div class="inputs">
-                        <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required />
-                            <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required />
-                            <input class="input__element" name="comment" id="comment" placeholder="Message" required />
-                        </div>
-                    </div>
-                </div>
-                <div class="flex_sb">
-                    <h2>Parle?</h2>
-                    <div class="right">
-                        <div class="btn btn_send">
-                            <div class="line-horizontal line-up"></div>
-                            <div class="line-vertical line-right"></div>
-                            <button class="send">Envoyer</button> 
-                            <div class="line-vertical line-left"></div>
-                            <div class="line-horizontal line-down"></div> 
-                        </div>
                         
-                        <nav class="socials">
-                            <a href="https://www.linkedin.com/in/amélie-cousineau-7408422b6" target="_blank">
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/AmelieCousineau" target="_blank">
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-github"></use>
-                                </svg>
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="infos flex_sb">
-                    <a href="mailto:ameliecousineau5@gmail.com">ameliecousineau5@gmail.com</a>
-                    <a href="tel:4384991920">(438) 499-1920</a>
-                    <a href="">Curriculum vitae</a>
-                </div>
+                <nav class="socials">
+                    <a href="https://www.linkedin.com/in/amélie-cousineau-7408422b6" target="_blank">
+                        <svg class="icon icon--xl">
+                            <use href="#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/AmelieCousineau" target="_blank">
+                        <svg class="icon icon--xl">
+                            <use href="#icon-github"></use>
+                        </svg>
+                    </a>
+                </nav>
             </div>
-        </section>
+        </div>
+        <div class="infos flex_sb">
+            <a href="mailto:ameliecousineau5@gmail.com">ameliecousineau5@gmail.com</a>
+            <a href="tel:4384991920">(438) 499-1920</a>
+            <a href="">Curriculum vitae</a>
+        </div>
+    </div>
+</section>
 
 {% include '_partials/_footer.html' %}
