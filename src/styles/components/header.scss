@@ -120,11 +120,14 @@ header{
     color: var(--color-white);
     width: 100vw;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 64px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in;
+    mix-blend-mode: normal;
 
     ul{
         list-style: none;
@@ -138,5 +141,5 @@ header{
 }
 
 .nav-is-active .nav__main{
-    display: flex;
+    transform: translateY(0);
 }
