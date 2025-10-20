@@ -1,0 +1,131 @@
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  z-index: 9999;
+  transition: opacity 0.8s ease;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 120px 50px;
+  animation: out .5s 1s;
+
+  .pourcent{
+    font-size: typo(64px,128px);
+    font-weight: 900;
+    align-self: start;
+    line-height: 75%;
+  }
+
+  .roles{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--color-black-light);
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    transform: rotate(-15deg);
+
+    .role{
+        display: flex;
+        gap: 16px;
+        transition: all 0.5s ease-in;
+        
+        
+        p{
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: typo(80px, 150px);
+            line-height: 75%;
+        }
+    }
+
+    .devRole{
+        animation: devAnim 10s infinite linear;
+    }
+
+    .amelieRole{
+        animation: amelieAnim 8s infinite linear;
+    }
+
+    .webRole{
+        animation: webAnim 5s infinite linear;
+    }
+
+    .cousineauRole{
+        animation: cousineauAnim 5s infinite linear;
+    }
+
+  }
+
+  svg{
+    --star-size: 13.5rem;
+
+    width: var(--star-size);
+    height: var(--star-size);
+    align-self: end;
+  }
+}
+
+
+
+/* Cacher le splash après l’animation */
+.splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Cacher le contenu tant que le splash est visible */
+.hidden {
+  display: none;
+}
+
+@keyframes devAnim {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes amelieAnim {
+    from{
+        transform: translateX(-30%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes webAnim {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes cousineauAnim {
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes out{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}

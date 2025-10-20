@@ -5,6 +5,7 @@ import GreetingAnim from "./components/GreetingAnim.js";
 import StarAnim from "./components/StarAnim.js";
 import Zoom from "./components/Zoom.js";
 import Scrolly from "./components/Scrolly.js";
+import Splash from "./components/Splash.js";
 
 export default class ComponentFactory {
   constructor() {
@@ -17,6 +18,7 @@ export default class ComponentFactory {
       StarAnim,
       Zoom,
       Scrolly,
+      Splash,
     };
     this.init();
   }
