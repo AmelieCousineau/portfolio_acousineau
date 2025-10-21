@@ -70,6 +70,32 @@
     height: var(--star-size);
     align-self: end;
   }
+
+  @media screen and (max-width: 1700px){
+    padding: 60px 60px 25px;
+
+    .roles{
+        top: -250px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md){
+    .roles{
+        top: -150px;
+    }
+
+    svg{
+        --star-size: 10rem;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-sm){
+    padding: 30px 10px 10px 30px;
+
+    .roles{
+        top: 0;
+    }
+  }
 }
 
 
