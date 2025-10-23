@@ -301,7 +301,7 @@
 
 <section class="contact" id="contact">
     <h2 class="side" data-scrolly="fromLeft">Hey!</h2>
-    <div class="wrapper">
+    <form class="wrapper" data-component="Form" action="https://formspree.io/f/mpwyglel" method="POST">
         <div class="hides">
             <h2 class="side-hide" data-scrolly="fromLeft">Hey!</h2>
             <h2 class="hide" data-scrolly="fromLeft">On se parle?</h2>
@@ -314,11 +314,11 @@
                         <use href="#icon-cercleStar"></use>
                     </svg>
                 </div>
-                <form class="inputs">
+                <div class="inputs">
                     <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required />
                     <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required />
-                    <input class="input__element" name="comment" id="comment" placeholder="Message" required />
-                </form>
+                    <textarea class="input__element" name="comment" id="comment" placeholder="Message" required ></textarea>
+                </div>
             </div>
         </div>
         <div class="flex_sb">
@@ -327,7 +327,7 @@
                 <div class="btn btn_send">
                     <div class="line-horizontal line-up"></div>
                     <div class="line-vertical line-right"></div>
-                    <button class="send">Envoyer</button> 
+                    <button class="send" type="submit">Envoyer</button> 
                     <div class="line-vertical line-left"></div>
                     <div class="line-horizontal line-down"></div> 
                 </div>
@@ -351,7 +351,7 @@
             <a href="tel:4384991920">(438) 499-1920</a>
             <a href="">Curriculum vitae</a>
         </div>
-    </div>
+    </form>
 </section>
 
 {% include '_partials/_footer.html' %}
