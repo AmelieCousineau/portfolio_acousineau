@@ -7,6 +7,7 @@ import Zoom from "./components/Zoom.js";
 import Scrolly from "./components/Scrolly.js";
 import Splash from "./components/Splash.js";
 import Form from "./components/form.js";
+import Youtube from "./components/Youtube.js";
 
 export default class ComponentFactory {
   constructor() {
@@ -21,6 +22,7 @@ export default class ComponentFactory {
       Scrolly,
       Splash,
       Form,
+      Youtube,
     };
     this.init();
   }

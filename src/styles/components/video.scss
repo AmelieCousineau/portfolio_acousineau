@@ -1,0 +1,119 @@
+.youtube .wrapper{
+    --line-out: -14px;
+
+    position: relative;
+
+    .line-vertical{
+        width: 6px;
+        height: 250px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+    }
+
+    .line-horizontal{
+        width: 250px;
+        height: 6px;
+        background-color: var(--color-white-dark);
+        position: absolute;
+    } 
+
+    .line-up{
+        top: var(--line-out);
+        right: var(--line-out);
+    }
+
+    .line-right{
+        top: var(--line-out);
+        right: var(--line-out);
+    }
+
+    .line-down{
+        bottom: var(--line-out);
+        left: var(--line-out);
+    }
+
+    .line-left{
+        bottom: var(--line-out);
+        left: var(--line-out);
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        .line-horizontal, .line-vertical{
+            display: none;
+        }
+    }
+}
+
+.video {
+    color: var(--color-white);
+    text-align: center;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .icon {
+        width: 8rem;
+        height: 8rem;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition-property: opacity, transform;
+        transform-origin: 0 0;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        overflow: visible;
+        background-color: var(--color-primary);
+        border-radius: 100%;
+        padding: 16px;
+
+        use{
+            transition: 0.4s $ease-out-expo;
+        }
+
+        .is-video-ready & {
+            opacity: 1;
+        }
+    }
+
+    &:hover{ 
+        .icon use{
+            animation: playButton infinite 0.4s alternate ease-out;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+        .icon{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        .icon{
+            width: 4rem;
+            height: 4rem;
+            padding: 8px;
+        }
+    }
+}
+
+@keyframes playButton{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
+
+.video__media {
+    @include cover();
+}
