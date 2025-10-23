@@ -90,6 +90,10 @@
         img{
             transform: scale(110%);
         }
+
+        .prize img{
+            transform: scale(100%);
+        }
     }
 
     @media screen and (max-width: $breakpoint-sm) {
@@ -102,6 +106,91 @@
         .line-vertical{
             height: 150px !important;
         }
+    }
+}
+
+.prize{
+    --size: 200px;
+
+    height: var(--size);
+    width: var(--size);
+    position: absolute;
+    z-index: 5;
+    right: 5%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        position: relative;
+        z-index: 3;
+        font-size: typo(28px);
+        line-height: 100%;
+        font-weight: 500;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: rotatePrize infinite 20s linear;
+    }
+
+    @media screen and (max-width: $breakpoint-lg){
+        --size: 150px;
+        top: 8%;
+
+        span{
+            font-size: typo(20px);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+        top: 7%;
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        --size: 100px;
+        top: 13%;
+        right: 6%;
+
+        span{
+            font-size: typo(15px);
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        right: 7%;
+    }
+
+    @media screen and (max-width: 530px){
+        right: 8%;
+    }
+
+    @media screen and (max-width: $breakpoint-xs){
+        --size: 80px;
+        top: 13%;
+        right: 9%;
+
+        span{
+            font-size: typo(12px);
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        right: 10%;
+    }
+}
+
+@keyframes rotatePrize{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }
 
