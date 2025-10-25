@@ -27,7 +27,8 @@ export default class Scrolly {
       const target = entry.target;
 
       if (entry.isIntersecting) {
-        target.classList.add('is-active');
+        const delay = target.dataset.delay;
+        setTimeout(this.addScrolly, delay, target);
 
         if ("noRepeat" in this.element.dataset) {
           observer.unobserve(target); //Arrête l'animation au scroll après qu'elle soit fait la première fois
@@ -37,5 +38,9 @@ export default class Scrolly {
         target.classList.remove('is-active');
       }
     }
+  }
+
+  addScrolly(target){
+    target.classList.add('is-active');
   }
 }

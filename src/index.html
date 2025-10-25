@@ -42,7 +42,7 @@
         <div class="content">
             <div class="greetings">
                 <span class="greeting js-greeting" data-component="GreetingAnim">
-                            Salut!
+                    Salut!
                 </span>
                 <div class="typeLine js-type-line"></div>
             </div>
@@ -62,7 +62,7 @@
 
 <section class="projects" id="projects">
     <div class="wrapper">
-        <div class="swiper swiper-full cards" data-component="Carousel" data-space="100px" data-slides="1" data-split>
+        <div class="swiper swiper-full cards" data-component="Carousel" data-space="100px" data-slides="1" data-split data-scrolly="cardGap">
             <div class="swiper-wrapper">
                 <a href="shellSound.html" class="swiper-slide card">
                     <div class="card_media">
@@ -176,10 +176,10 @@
     <svg class="icon deco deco-star2" data-component="StarAnim" data-speed="15" data-inverse>
         <use href="#icon-cercleStar"></use>
     </svg>
-    <h2 class="outWrapper" data-scrolly="fromLeft">et moi alors?</h2>
+    <h2 class="outWrapper" data-scrolly="fromLeftStraight">et moi alors?</h2>
             
     <div class="wrapper">
-        <h2 class="inWrapper" data-scrolly="fromLeft">et moi alors?</h2>
+        <h2 class="inWrapper" data-scrolly="fromLeftStraight">et moi alors?</h2>
 
         <p>
             Presque née devant un ordinateur, je m’intéresse à l’informatique depuis mon plus jeune âge. J’ai commencé par un <span>DEP en soutien informatique</span>, suivie d’un an en <span>technique en informatique</span> pour finir par échouer en <span>technique d’intégration multimédian</span>, l’endroit où j’ai trouvé ma place. En dehors des cours, j’aime les <span>jeux vidéos</span>, la <span>lecture</span>, les <span>casse-têtes</span> et certains sports, tel que le <span>paddleboard</span> et le <span>vélo</span>. Je suis <span>sociable</span>, <span>dynamique</span> et j’aime <span>parlé</span> (même parfois trop).
@@ -194,25 +194,25 @@
                 </div>
                 <h3 class="bottom">m'anime</h3>
                 <ul>
-                    <li>
+                    <li data-scrolly="fromTop">
                         <svg class="icon icon--xl">
                             <use href="#icon-game"></use>
                         </svg>
                         Jeux vidéo
                     </li>
-                    <li>
+                    <li data-scrolly="fromTop" data-delay="200">
                         <svg class="icon icon--xl">
                             <use href="#icon-glasses"></use>
                         </svg>
                         Lecture
                     </li>
-                    <li>
+                    <li data-scrolly="fromTop" data-delay="400">
                         <svg class="icon icon--xl">
                             <use href="#icon-puzzle"></use>
                         </svg>
                         Casse-tête
                     </li>
-                    <li>
+                    <li data-scrolly="fromTop" data-delay="600">
                         <svg class="icon icon--xl">
                             <use href="#icon-music"></use>
                         </svg>
@@ -229,11 +229,11 @@
                     </svg>
                 </div>
                 <ul>
-                    <li>Esprit d’équipe</li>
-                    <li>Minutieuse</li>
-                    <li>Organisée</li>
-                    <li>Créative</li>
-                    <li>Sociable</li>
+                    <li data-scrolly="fromTop">Esprit d’équipe</li>
+                    <li data-scrolly="fromTop" data-delay="200">Minutieuse</li>
+                    <li data-scrolly="fromTop" data-delay="400">Organisée</li>
+                    <li data-scrolly="fromTop" data-delay="600">Créative</li>
+                    <li data-scrolly="fromTop" data-delay="800">Sociable</li>
                 </ul>
             </div>
         </div>
@@ -241,12 +241,12 @@
 </section>
 
 <section class="kit">
-    <h2 class="outWrapper" data-scrolly="fromRight">Mon kit dev</h2>
+    <h2 class="outWrapper" data-scrolly="fromRightStraight">Mon kit dev</h2>
     <svg class="icon deco" data-component="StarAnim" data-speed="13">
         <use href="#icon-star"></use>
     </svg>
     <div class="wrapper">
-        <h2 class="inWrapper" data-scrolly="fromLeft">Mon kit dev</h2>
+        <h2 class="inWrapper" data-scrolly="fromLeftStraight">Mon kit dev</h2>
         <div class="grid-3">
             <p>
                 Présentement <span>finissante</span> en technique d’intégration multimédia, je suis <span>passionnée de web</span>. Je souhaite me trouver un stage en <span>développement web</span> et j’espère trouver une agence dans laquelle je pourrais <span>continuer mon parcours professionnel</span>. 
@@ -255,25 +255,25 @@
                 <h3>Mon</h3>
                 <h3 class="bottom">Expertise</h3>
                 <ul>
-                    <li>Développement web</li>
-                    <li>Design web</li>
+                    <li data-scrolly="fromTop">Développement web</li>
+                    <li data-scrolly="fromTop" data-delay="200">Design web</li>
                 </ul>
             </div>
             <div class="langages">
                 <h3>Mon</h3>
                 <h3 class="bottom">Language</h3>
                 <ul>
-                    <li>
+                    <li  data-scrolly="fromLeft">
                         <svg class="icon icon--xl">
                             <use href="#icon-html"></use>
                         </svg>
                     </li>
-                    <li>
+                    <li  data-scrolly="fromLeft" data-delay="200">
                         <svg class="icon icon--xl">
                             <use href="#icon-css"></use>
                         </svg>
                     </li>
-                    <li>
+                    <li  data-scrolly="fromLeft" data-delay="400">
                         <svg class="icon icon--xl">
                             <use href="#icon-js"></use>
                         </svg>
@@ -284,12 +284,12 @@
                 <h3>Mon</h3>
                 <h3 class="bottom">Arsenal</h3>
                 <ul>
-                    <li>
+                    <li  data-scrolly="fromLeft">
                         <svg class="icon icon--xl">
                             <use href="#icon-figma"></use>
                         </svg>
                     </li>
-                    <li>
+                    <li  data-scrolly="fromLeft" data-delay="200">
                         <svg class="icon icon--xl">
                             <use href="#icon-vscode"></use>
                         </svg>
@@ -307,7 +307,7 @@
     <div class="wrapper">
         <div class="line-horizontal line-up"></div>
         <div class="line-vertical line-right"></div>
-        <div class="video" data-component="Youtube" data-video-id="L3e54WB8T1k">
+        <div class="video" data-component="Youtube" data-video-id="5OgNNoxFGsw">
             <div class="video__media js-video">
                 <img class="js-poster" src="assets/images/videoMedia.png" alt="Ma vidéo de présentation" />
                 <svg class="icon icon--xl">
@@ -325,10 +325,10 @@
     <form class="wrapper" data-component="Form" action="https://formspree.io/f/mpwyglel" method="POST">
         <div class="hides">
             <h2 class="side-hide" data-scrolly="fromLeft">Hey!</h2>
-            <h2 class="hide" data-scrolly="fromLeft">On se parle?</h2>
+            <h2 class="hide" data-scrolly="fromLeft" data-delay="200">On se parle?</h2>
         </div>
         <div class="flex_sb">
-            <h2 data-scrolly="fromLeft">On<br>Se</h2>
+            <h2 data-scrolly="fromLeft" data-delay="200">On<br>Se</h2>
             <div class="form">
                 <div class="mask">
                     <svg class="icon formIcon" data-component="StarAnim" data-speed="8">
@@ -336,16 +336,16 @@
                     </svg>
                 </div>
                 <div class="inputs">
-                    <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required />
-                    <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required />
-                    <textarea class="input__element" name="comment" id="comment" placeholder="Message" required ></textarea>
+                    <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Nom" required data-scrolly="fromLeft" data-delay="200" />
+                    <input class="input__element" type="email" name="email" id="email" placeholder="Courriel" required data-scrolly="fromLeft" data-delay="400" />
+                    <textarea class="input__element" name="comment" id="comment" placeholder="Message" required data-scrolly="fromLeft" data-delay="600" ></textarea>
                 </div>
             </div>
         </div>
         <div class="flex_sb">
-            <h2 data-scrolly="fromLeft">Parle?</h2>
+            <h2 data-scrolly="fromLeft" data-delay="200">Parle?</h2>
             <div class="right">
-                <div class="btn btn_send">
+                <div class="btn btn_send" data-scrolly="fromTop" data-delay="800">
                     <div class="line-horizontal line-up"></div>
                     <div class="line-vertical line-right"></div>
                     <button class="send" type="submit">Envoyer</button> 
@@ -354,12 +354,12 @@
                 </div>
                         
                 <nav class="socials">
-                    <a href="https://www.linkedin.com/in/amélie-cousineau-7408422b6" target="_blank">
+                    <a href="https://www.linkedin.com/in/amélie-cousineau-7408422b6" target="_blank" data-scrolly="fromRight" data-delay="1200">
                         <svg class="icon icon--xl">
                             <use href="#icon-linkedin"></use>
                         </svg>
                     </a>
-                    <a href="https://github.com/AmelieCousineau" target="_blank">
+                    <a href="https://github.com/AmelieCousineau" target="_blank" data-scrolly="fromRight" data-delay="1000">
                         <svg class="icon icon--xl">
                             <use href="#icon-github"></use>
                         </svg>

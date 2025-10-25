@@ -31,6 +31,18 @@
         }
     }
 
+    [data-scrolly='fromLeftStraight'] {
+        // déclaration pour cacher l'élément
+
+        transform: translateX(-90%);
+        transition: all 0.5s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
+            transform: translateX(0);
+        }
+    }
+
     [data-scrolly='fromTop'] {
         // déclaration pour cacher l'élément
 
@@ -55,6 +67,17 @@
         &.is-active {
             // on change ce qu'il faut pour l'afficher
             opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRightStraight'] {
+        // déclaration pour cacher l'élément
+        transform: translateX(90%);
+        transition: all 0.5s ease-out;
+
+        &.is-active {
+            // on change ce qu'il faut pour l'afficher
             transform: translateX(0);
         }
     }
@@ -87,6 +110,19 @@
             // on change ce qu'il faut pour l'afficher
             opacity: 1;
             transform: rotateX(0) translate3d(0, 0, 0);
+        }
+    }
+
+    [data-scrolly='cardGap'] {
+        // déclaration pour cacher l'élément
+        .swiper-slide{
+            margin-left: 500px !important;
+            transition: all 0.4s ease-out;
+        }
+
+        &.is-active .swiper-slide{
+            // on change ce qu'il faut pour l'afficher
+            margin-left: 0 !important;
         }
     }
 }

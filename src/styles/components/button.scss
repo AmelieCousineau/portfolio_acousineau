@@ -63,6 +63,7 @@
 
 .btn_send{
     height: auto;
+    
 
     .line-horizontal, .line-vertical{
         background-color: var(--color-white);
@@ -74,6 +75,7 @@
         color: var(--color-white);
         padding: 16px 32px;
         font-size: typo(20px, 36px);
-        transition: all 0.5s ease-in; 
+        transition: all 0.5s ease-in;
+        cursor: pointer;
     }
 }
